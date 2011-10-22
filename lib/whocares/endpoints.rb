@@ -1,5 +1,16 @@
 require 'sinatra'
 
+require 'mustache/sinatra'
+require 'sinatra/jsonp'
+
 get '/' do
-  "sup dogg"
+  mustache :index
+end
+
+get '/people' do
+  JSONP {}
+end
+
+get '/projects' do
+  JSONP {}
 end

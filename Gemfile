@@ -1,8 +1,10 @@
 source :rubygems
 
 gem 'activerecord'
+gem 'mustache'
 gem 'sinatra'
 gem 'sinatra-activerecord'
+gem 'sinatra-jsonp', :require => 'sinatra/jsonp'
 
 group :production do
   gem 'pg'
