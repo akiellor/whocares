@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>{{title}}</title>
+    {{# javascripts}}
+    <script src="{{path}}" type="text/javascript"></script>
+    {{/ javascripts}}
   </head>
   <body>
     {{{yield}}}

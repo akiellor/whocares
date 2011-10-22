@@ -1,16 +1,20 @@
-require 'sinatra'
+require 'sinatra/base'
 
 require 'mustache/sinatra'
 require 'sinatra/jsonp'
 
-get '/' do
-  mustache :index
-end
+class WhoCares < Sinatra::Base
+  register Mustache::Sinatra
 
-get '/people' do
-  JSONP {}
-end
+  get '/' do
+    mustache :index
+  end
 
-get '/projects' do
-  JSONP {}
+  get '/people' do
+    JSONP {}
+  end
+
+  get '/projects' do
+    JSONP {}
+  end
 end
