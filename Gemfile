@@ -5,7 +5,7 @@ gem 'sinatra'
 gem 'sinatra-activerecord'
 
 group :production do
-  gem 'postgres'
+  gem 'pg'
 end
 
 group :development do
