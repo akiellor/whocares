@@ -5,6 +5,7 @@ require 'sinatra/jsonp'
 
 class WhoCares < Sinatra::Base
   register Mustache::Sinatra
+  helpers Sinatra::Jsonp
 
   get '/' do
     mustache :index
