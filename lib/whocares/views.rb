@@ -14,6 +14,7 @@ module WhoCares::Views
 
   class Index < Layout
     javascript :jquery
+    javascript :underscore
     javascript :p2p
 
     def title
